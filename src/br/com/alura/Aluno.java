@@ -22,7 +22,4 @@ public class Aluno {
 	public String toString() {
 	    return "[Aluno: " + this.nome + ", matricula: " + this.numeroMatricula + "]";
 	}
-	
-	
-
 }
