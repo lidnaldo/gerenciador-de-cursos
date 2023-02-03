@@ -45,7 +45,6 @@ public class Curso {
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
         this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);   // adicionando no map também 
-
 	}
 	
     public List<Aula> getAulas() {
@@ -57,7 +56,7 @@ public class Curso {
 	}
 
 	public Aluno buscaMatriculado(int numero) {
-
+//
 //	    for (Aluno aluno : alunos) {
 //	        if (aluno.getNumeroMatricula() == numero) {
 //	            return aluno;
