@@ -1,4 +1,4 @@
-package br.com.alura.TreeSet_Comparator;
+package br.com.alura.treeset_comparator;
 
 public class Funcionario {
 

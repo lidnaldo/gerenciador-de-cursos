@@ -1,4 +1,4 @@
-package br.com.alura.TreeSet_Comparator;
+package br.com.alura.treeset_comparator;
 
 //A implementação TreeSet já ordena os seus elementos na hora da inserção. 
 //Qual é o critério da ordenação depende e pode ser definido através de um Comparator.

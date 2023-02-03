@@ -1,21 +1,19 @@
-package br.com.alura;
+package br.com.alura.equals_hashcode;
 
 import java.util.ArrayList;
 // https://unibb.alura.com.br/course/java-collections/task/14175
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-public class CursoEqualsHashcodeSet {
+public class CursoEqualsHashcodeList {
 
 //	private int tempoCurso;
     private String nome;
     private String instrutor;
-    private List<Aula> aulas = new ArrayList<Aula>();
-    private Set<AlunoEqualsHascode> alunos = new HashSet<>(); 
+    private List<AulaEquals> aulas = new ArrayList<AulaEquals>();
+    private List<AlunoEqualsHascode> alunos = new ArrayList<>(); 
 
-    public CursoEqualsHashcodeSet(String nome, String instrutor) {
+    public CursoEqualsHashcodeList(String nome, String instrutor) {
         this.nome = nome;
         this.instrutor = instrutor;
     }
@@ -28,11 +26,11 @@ public class CursoEqualsHashcodeSet {
         return instrutor;
     }
 
-    public List<Aula> getAulas() {
+    public List<AulaEquals> getAulas() {
         return Collections.unmodifiableList(aulas);  // unmodifiableList : nao permitir usar aicionar aulas (com add) fora da classe
     }
     
-    public void adiciona(Aula aula) {
+    public void adiciona(AulaEquals aula) {
         this.aulas.add(aula);
     }
     
@@ -45,7 +43,7 @@ public class CursoEqualsHashcodeSet {
 //        return tempoTotal;
         
 //        forma com map
-        return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+        return this.aulas.stream().mapToInt(AulaEquals::getTempo).sum();
         
     }
     
@@ -59,8 +57,8 @@ public class CursoEqualsHashcodeSet {
 		this.alunos.add(aluno);
 	}
 	
-	public Set<AlunoEqualsHascode> getAlunos() {
-	    return Collections.unmodifiableSet(alunos);
+	public List<AlunoEqualsHascode> getAlunos() {
+	    return Collections.unmodifiableList(alunos);
 	}
 
 	public boolean estaMatriculado(AlunoEqualsHascode turini) {

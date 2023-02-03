@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.equals_hashcode;
 
 //https://unibb.alura.com.br/course/java-collections/task/14203
 public class TestaCursoEqualsHashCode {
@@ -7,7 +7,7 @@ public class TestaCursoEqualsHashCode {
 
 		System.out.println(" ---------------- Trabalhando com Set <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ");
 		CursoEqualsHashcodeSet javaColecoesSet = new CursoEqualsHashcodeSet("Dominando as coleções do Java", "Paulo Silveira");
-		javaColecoesSet.adiciona(new Aula("Trabalhando com Set ", 21));
+		javaColecoesSet.adiciona(new AulaEquals("Trabalhando com Set ", 21));
 
 		AlunoEqualsHascode a1Set = new AlunoEqualsHascode("Rodrigo Turini", 34672);
 		AlunoEqualsHascode a2Set = new AlunoEqualsHascode("Guilherme Silveira", 5617);
@@ -18,7 +18,7 @@ public class TestaCursoEqualsHashCode {
 		javaColecoesSet.matricula(a3Set);
 
 		CursoEqualsHashcodeList javaColecoesList = new CursoEqualsHashcodeList("Dominando as coleções do Java", "Paulo Silveira");
-		javaColecoesList.adiciona(new Aula("Trabalhando com List", 22));
+		javaColecoesList.adiciona(new AulaEquals("Trabalhando com List", 22));
 
 		AlunoEqualsHascode a1List = new AlunoEqualsHascode("Rodrigo Turini", 34672);
 		AlunoEqualsHascode a2List = new AlunoEqualsHascode("Guilherme Silveira", 5617);
