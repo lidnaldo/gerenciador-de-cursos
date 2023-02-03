@@ -1,5 +1,7 @@
 package br.com.alura.mapas;
 
+// teste push com proxy
+
 public class TestaAlunosBuscaNoCurso {
 
 	public static void main(String[] args) {
